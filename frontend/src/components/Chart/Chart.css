@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+  
+.Chart-page {
+    width: 100%;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Filter-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .Filter-container input {
+    padding: 5px;
+    width: 110px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .Filter-container button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .Filter-container button:hover {
+    background-color: #0056b3;
+  }
+  .Filter-container select{
+
+    height:20px;
+  }
+  .chart-container {
+    width: 100%; 
+    max-width: 100%;
+    height:calc(100% - 50% - 20px);
+    margin-bottom: 20px;
+    flex:1;
+  }
+
+  .table-chart-container {
+    flex: 1;
+    overflow-x: auto; 
+  }
+
+  .table-chart-container table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-y: auto;
+    table-layout: fixed;
+    
+  }
+  .table-chart-container th,
+  .table-chart-container td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    word-wrap: break-word;
+  }
+  
+  .table-chart-container th {
+    background-color: #f5f5f5;
+    text-transform: capitalize;
+    position: sticky;
+    top:0;
+    z-index: 1;
+  }
+  
+  .table-chart-container tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  @media screen and (max-width: 768px) {
+    .Filter-container {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .Filter-container input {
+      width: 100%;
+    }
+  
+    .Filter-container button {
+      width: 100%;
+    }
+  }
+  

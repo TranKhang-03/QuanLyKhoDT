@@ -1,0 +1,142 @@
+/* Đặt nền cho container và căn giữa nội dung */
+.employee-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Tiêu đề lớn cho thông tin nhân viên */
+  .employee-container h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Thiết lập cho phần thông tin nhân viên theo 2 cột */
+  .employee-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px;
+    color: #444;
+  }
+  
+  .employee-info .em-info-item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .employee-info strong {
+    color: #555;
+    margin-right: 10px;
+  }
+  
+  /* Đổi mật khẩu button */
+  .employee-info button {
+    grid-column: span 2;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .employee-info button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Phần đổi mật khẩu */
+  .em-password-change {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .em-password-change h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  /* Định dạng cho các ô nhập mật khẩu */
+  .em-password-change input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Định dạng nút lưu và hủy trong phần đổi mật khẩu */
+  .em-password-change button {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .em-password-change button:nth-child(3) {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .em-password-change button:nth-child(3):hover {
+    background-color: #218838;
+  }
+  
+  .em-password-change button:nth-child(4) {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .em-password-change button:nth-child(4):hover {
+    background-color: #c82333;
+  }
+  
+  .password-input {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+
+  .password-input input {
+    width: 100%;
+    padding-right: 2.5rem; /* Chừa khoảng trống cho icon */
+    padding-left: 0.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .password-input .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 0.75rem; /* Căn icon sát phải */
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #666;
+    user-select: none;
+  }
+  
+  .password-input .toggle-password:hover {
+    color: #333;
+  }

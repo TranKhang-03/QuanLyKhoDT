@@ -1,0 +1,59 @@
+.content_provider {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    max-height: 400px; /* Chiều cao tối đa của bảng */
+  }
+  .content_provider thead{
+    position: sticky;
+    top: 0;
+}
+
+.rows_QH td{
+  font-weight: 700;
+  background-color: lightskyblue;
+  width: 16.7%; 
+}
+
+.QH_rows td{
+    font-weight: 700;
+  background-color: lightskyblue;
+  width: 16.7%; 
+}
+.contend_row_provider td{
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    font-size: 14px;
+    text-align: center;
+    color: #000000;
+}
+  
+  .content_provider table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .content_provider th,
+  .content_provider td {
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .content_provider th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  .content_provider tr:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .content_provider td {
+    font-size: 14px;
+    text-align: center;
+    color: #000000;
+  }

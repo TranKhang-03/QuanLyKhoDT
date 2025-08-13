@@ -1,0 +1,155 @@
+/* Đặt toàn bộ màn hình với lớp phủ tối */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Container chính của modal */
+.modal-container {
+  background-color: white;
+  width: 470px;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Thêm bóng mờ cho modal */
+  position: relative; /* Thêm position relative cho việc định vị nút đóng */
+  transition: transform 0.3s ease-in-out; /* Thêm hiệu ứng chuyển động cho modal */
+}
+
+.modal-container h2 {
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+/* Nút đóng modal */
+.close-btn {
+  position: absolute; /* Đặt vị trí tuyệt đối */
+  top: 1px;
+  right: 1px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  color: #e80c0c;
+}
+
+.input-container {
+  margin: 20px 0;
+}
+
+.input-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  transition: border-color 0.3s; /* Thêm hiệu ứng cho border khi focus */
+}
+
+.input-container input:focus {
+  border-color: #3498db; /* Thay đổi màu viền khi focus */
+}
+
+.brand-table-container {
+  max-height: 320px; /* Đặt chiều cao tối đa cho bảng */
+  overflow-y: auto; /* Kích hoạt cuộn dọc khi dữ liệu vượt quá chiều cao */
+}
+
+.brand-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.brand-table th,
+.brand-table td {
+  padding: 12px; /* Tăng padding cho bảng */
+  text-align: center;
+  border: 1px solid #ddd;
+  white-space: nowrap;
+}
+
+.brand-table th {
+  background-color: #f5f5f5;
+}
+.brand-table thead {
+  position: sticky; /* Giữ cố định hàng tiêu đề khi cuộn */
+  top: 0;
+  background-color: #f8f8f8;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.add-btn-modal,
+.edit-btn-modal,
+.btn-delete-modal {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; /* Thêm hiệu ứng cho nút */
+}
+
+.add-btn-modal {
+  background-color: #28a745;
+  color: white;
+}
+
+.edit-btn-modal {
+  background-color: #3498db;
+  color: white;
+}
+
+.btn-delete-modal {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.add-btn-modal:hover {
+  background-color: #218838; /* Tối hơn khi hover */
+  transform: translateY(-2px); /* Tăng hiệu ứng nâng khi hover */
+}
+
+.edit-btn-modal:hover {
+  background-color: #2980b9; /* Tối hơn khi hover */
+  transform: translateY(-2px); /* Tăng hiệu ứng nâng khi hover */
+}
+
+.btn-delete-modal:hover {
+  background-color: #c0392b; /* Tối hơn khi hover */
+  transform: translateY(-2px); /* Tăng hiệu ứng nâng khi hover */
+}
+
+.error-message-brand {
+  color: red;
+  animation: fadeIn 0.5s ease; /* Thêm hiệu ứng hiển thị lỗi */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,12 @@
+const express = require('express');
+const router = express.Router();
+const thongkeController = require('../controllers/thongkeController');
+router.get('/thongKeKhachHang',thongkeController.getThongKeKhachHang);
+router.get('/thongKeNhaCungCap',thongkeController.getThongKeProvider);
+router.get('/thongKeNhapXuat',thongkeController.getThongKeNhapXuat);
+router.get('/thongKeTheoNam',thongkeController.getThongKeTheoNam);
+router.get('/thongKeTheoThang',thongkeController.getThongKeTheoThang);
+router.get('/thongKeTheoNgay',thongkeController.getThongKeTheoNgay);
+router.get('/thongKe7NgayGanNhat',thongkeController.getThongKe7NgayGanNhat);
+router.get('/thongKeNgayDenNgay',thongkeController.getThongKeNgayDenNgay);
+module.exports = router;

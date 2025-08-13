@@ -1,0 +1,180 @@
+/* Lớp phủ tối (overlay) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Làm tối giao diện */
+  z-index: 999; /* Nằm dưới modal */
+  display: none; /* Ẩn mặc định */
+}
+.error-message-product {
+  color: red;
+}
+
+/* Hiển thị lớp phủ khi modal mở */
+.modal-overlay.active {
+  display: block;
+}
+
+/* Hiển thị preview ảnh */
+.preview-image {
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+.preview-image img {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* CSS cho toàn bộ modal */
+.add-product-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%; /* Độ rộng modal */
+  max-width: 1000px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 20px 30px;
+  font-family: Arial, sans-serif;
+}
+
+/* Tiêu đề modal */
+.add-product-modal h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff; /* Màu nền xanh dương */
+  padding: 10px 0;
+  border-radius: 8px 8px 0 0;
+  margin: -20px -30px 20px -30px;
+}
+
+/* Form bên trong modal */
+.add-product-modal form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cột */
+  gap: 20px; /* Khoảng cách giữa các trường */
+}
+.add-product-modal label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Trường nhập liệu (input, select) */
+.add-product-modal input,
+.add-product-modal select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Nút upload hình ảnh */
+.add-product-modal .image-upload {
+  grid-column: span 3; /* Chiếm hết 3 cột */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-product-modal .image-upload button {
+  background-color: #007bff; /* Màu xanh dương */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-product-modal .image-upload button:hover {
+  background-color: #0056b3;
+}
+
+/* Nút Tạo cấu hình và Hủy */
+.add-product-modal .action-buttons {
+  grid-column: span 3; /* Chiếm hết 3 cột */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.add-product-modal .btn-create {
+  background-color: #007bff; /* Màu xanh dương */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-product-modal .btn-create:hover {
+  background-color: #0056b3;
+}
+
+.btn-next {
+  background-color: #28a745;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-next:hover {
+  background-color: #2d6639;
+}
+.add-product-modal .btn-cancel {
+  background-color: #dc3545; /* Màu đỏ */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.add-product-modal .btn-cancel:hover {
+  background-color: #a71d2a;
+}
+
+/* Responsive (điều chỉnh trên màn hình nhỏ) */
+@media (max-width: 768px) {
+  .add-product-modal {
+    width: 90%; /* Giảm độ rộng modal */
+    padding: 15px;
+  }
+
+  .add-product-modal form {
+    grid-template-columns: 1fr; /* Chuyển thành 1 cột */
+  }
+
+  .add-product-modal .action-buttons {
+    flex-direction: column;
+  }
+}

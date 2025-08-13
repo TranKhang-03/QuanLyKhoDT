@@ -1,0 +1,357 @@
+.page_customer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .page_customer h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  
+  .content_customer {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    max-height: 400px; /* Chiều cao tối đa của bảng */
+  }
+  .content_customer thead{
+    position: sticky;
+    top: 0;
+}
+
+.QH td{
+  font-weight: 700;
+  background-color: lightskyblue;
+  width: 20%;
+  position: sticky;
+  top: 0;
+}
+
+.row_QH td{
+  font-weight: 700;
+  background-color: lightskyblue;
+  width: 20%;
+  position: sticky;
+  top: 0; 
+}
+  
+  .content_customer table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .content_customer th,
+  .content_customer tr td {
+    padding: 15px 15px;
+    border: 1px solid #e0e0e0;
+  }
+
+  .content_customer .row_QH td{
+    padding: 25px 25px;
+  }
+  
+  .content_customer tr:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .content_customer td {
+    font-size: 14px;
+    text-align: center;
+    color: #000000;
+  }
+  
+
+
+.operation{
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between; 
+}
+/* form ds ẩn hiện */
+.operation_KH{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  border-bottom: 2px solid #e0e0e0; /* Đường kẻ dưới */
+  margin-bottom: 20px;
+}
+
+.button_KH{
+  flex: 1; /* Chia đều không gian */
+  padding: 1rem; /* Tương đương với py-4 */
+  text-align: center;
+  border: none;
+  font-size: 1.2rem; /* Tương đương với text-sm */
+  background-color: transparent;
+  cursor: pointer;
+  color: #6b7280; /* Tương đương với text-gray-500 */
+  border-bottom: 2px solid transparent;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.button_KH :hover{
+  color: #374151; /* Tương đương với text-gray-700 */
+  border-bottom-color: #d1d5db; /* Tương đương với border-gray-300 */
+}
+
+.button_KH.active {
+  border-bottom-color: #000000; /* Tương đương với border-primary */
+  color: #000000; /* Tương đương với text-primary */
+  font-weight: 500; /* Tương đương với font-medium */
+}
+
+  .button-addCustomer button {
+    background-color: #000000 ;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    border:none;
+  }
+  
+  .button-addCustomer :hover{
+    background-color: #45a049;
+  }
+
+.input-search input{
+  padding: 10px 30px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* 
+interface ADD */
+
+.interface_add{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.form_interface{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form_interface_add{
+  margin-top: 10%;
+  background-color: #fff;
+            border: 2px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1001;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+
+}
+
+.inputshow_notcomment{
+  background-color: #f0f0f0; /* Màu nền xám nhạt */
+  border: 1px solid #ccc;    /* Đường viền xám nhạt */
+  color: #888;              /* Màu chữ mờ hơn */
+  cursor: not-allowed;  
+  outline: none;
+}
+
+.error-input {
+  border: 2px solid red;
+  border-radius: 4px;
+  background-color: #ffe6e6;
+  color: #a94442;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Khi input bị lỗi và được focus */
+.error-input:focus {
+  border-color: #d9534f;
+  box-shadow: 0 0 5px rgba(217, 83, 79, 0.8);
+  background-color: #fff5f5;
+}
+
+.interface_add-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.interface_add-content input{
+  margin-bottom: 10px;
+  padding: 12px 30px;   
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.button-addCustomer-interface{
+  display: flex;
+  justify-content:space-between;
+  margin-top: 20px;
+}
+
+.button-addCustomer-interface button{
+  background-color: #000000 ;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  border:none;
+}
+
+.button-addCustomer-interface :hover{
+  background-color: #45a049;
+}
+/* 
+iterface_edit */
+.interface_edit{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/*animation*/
+.success-message {
+  color: white;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #4caf50;
+  position: fixed;
+  top: 100px;
+  right: -300px; /* Bắt đầu từ ngoài màn hình */
+  width: 200px;
+  opacity: 0;
+  animation: slideInOut 2s forwards;
+  z-index: 10;
+}
+
+.error-message{
+  color: white;
+  font-weight: bold;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: red;
+  position: fixed;
+  top: 100px;
+  right: -300px; /* Bắt đầu từ ngoài màn hình */
+  width: 200px;
+  opacity: 0;
+  animation: slideInOut 2s forwards;
+  z-index: 10;
+}
+
+/* Are you sure */
+.interface_ays{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.form_interface_ays{
+  margin-top: 20%;
+  background-color: #fff;
+            border: 2px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1001;
+            width: 30%;
+
+}
+
+@keyframes slideInOut {
+  0% {
+    right: -300px;
+    opacity: 0;
+  }
+  20% {
+    right: 0px;
+    opacity: 1;
+  }
+  80% {
+    right: 0px;
+    opacity: 1;
+  }
+  100% {
+    right: -300px;
+    opacity: 0;
+  }
+}
+
+
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .content_customer {
+      overflow-x: auto;
+    }
+    
+    .content_customer table {
+      min-width: 500px;
+    }
+      
+      .button-addCustomer button {
+        width: 100%;
+      }
+      
+      .input-search input{
+        width: 50%;
+      }
+
+      /* 
+interface ADD */
+.form_interface_add{
+            width: 50%;
+
+}
+
+  }
+

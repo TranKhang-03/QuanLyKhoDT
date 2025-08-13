@@ -1,0 +1,274 @@
+.container-area {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container_banner {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container_content {
+  overflow-x: auto;
+}
+
+.warehouse-area__container__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.warehouse-area__data-cell {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.warehouse-area__header-cell {
+  background-color: skyblue;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+
+}
+
+
+.add-area,
+.edit-area {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.add-area_banner,
+.edit-area_banner {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.add-area_content,
+.edit-area_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-area_content__content-items,
+.edit-area_content__content-items {
+  margin-bottom: 15px;
+}
+
+.warehouse-area__form-item-label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.warehouse-area__form-item-input {
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-area_button,
+.edit-area_button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.detail,
+.edit,
+.delete {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.detail:hover,
+.edit:hover,
+.delete:hover {
+  color: #007bff;
+}
+.warehouse-area {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.warehouse-area__container {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.warehouse-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  /* background-color: #45a049; */
+}
+
+.warehouse-button.add {
+  background-color: #4caf50;
+  color: white;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+
+}
+
+.warehouse-button.add:hover {
+  background-color: #45a049;
+}
+
+.warehouse-area__container__banner {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+.warehouse-area__detail-icon,
+.warehouse-area__edit-icon,
+.warehouse-area__delete-icon {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.warehouse-area__edit-icon {
+  color: #2196f3;
+}
+
+.warehouse-area__delete-icon {
+  color: #f44336;
+}
+
+.warehouse-area__add-form,
+.warehouse-area__edit-form,
+.warehouse-area__detail,
+.warehouse-area__change-warehouse--form {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.warehouse-area__add-form-banner,
+.warehouse-area__edit-form-banner {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.warehouse-area__form-item {
+  margin-bottom: 15px;
+}
+
+.warehouse-area__form-item-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.warehouse-area__form-item-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.warehouse-area__form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.warehouse-button.confirm {
+  background-color: #2196f3;
+  color: white;
+}
+
+.warehouse-button.confirm:hover {
+  background-color: #0b7dda;
+}
+
+.warehouse-button.exit {
+  background-color: #f44336;
+  color: white;
+}
+
+.warehouse-button.exit:hover {
+  background-color: #da190b;
+}
+.warehouse-area_search-and-add {
+  display: flex; /* Sử dụng Flexbox */
+  justify-content: space-between; /* Đặt khoảng cách tối đa giữa các phần tử */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  padding: 10px; /* Khoảng cách bên trong */
+  gap: 10px; /* Khoảng cách giữa các phần tử */
+  width: 100%; /* Chiếm toàn bộ chiều rộng */
+  box-sizing: border-box; /* Tính toán padding trong width */
+}
+
+.warehouse-search {
+  flex: 1; /* Để trường tìm kiếm co giãn chiếm không gian còn lại */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+}
+.warehouse-area__container__content{
+  max-height: 400px; /* Giới hạn chiều cao của div */
+  overflow-y: auto;  /* Cho phép cuộn dọc khi nội dung vượt quá chiều cao */
+  border: 1px solid #ddd; /* Tùy chọn: Thêm viền cho div */
+  padding: 10px; /* Tùy chọn: Thêm một chút padding bên trong div */
+
+}
+.warehouse-area__detail-content{
+  max-height: 300px; /* Giới hạn chiều cao của div */
+  overflow-y: auto;  /* Cho phép cuộn dọc khi nội dung vượt quá chiều cao */
+  border: 1px solid #ddd; /* Tùy chọn: Thêm viền cho div */
+  padding: 10px; /* Tùy chọn: Thêm một chút padding bên trong div */
+
+}
+.warehouse-form__alert-errors{
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.warehouse-area__filter{
+  height: 24px;
+}

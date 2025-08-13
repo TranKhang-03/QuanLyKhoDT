@@ -1,0 +1,253 @@
+.container-account {
+  margin: 20px;
+  text-align: center; /* Canh giữa theo chiều ngang */
+  vertical-align: middle; /* Canh giữa theo chiều dọc */
+}
+
+.container-account_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-account_content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.container-account_content table th,
+.container-account_content table td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+  text-align: center; /* Canh giữa theo chiều ngang */
+  vertical-align: middle; /* Canh giữa theo chiều dọc */
+}
+
+.add-account_button {
+  margin-top: 20px;
+}
+
+.add-account_button button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.add-account_button button:hover {
+  background-color: #45a049;
+}
+
+.account-act {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-acc,
+.delete-acc {
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 20px;
+}
+
+.edit-acc {
+  color: #4caf50;
+}
+
+.delete-acc {
+  color: #f44336;
+}
+
+.add-account,
+.edit-account {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-account_content,
+.edit-account_content {
+  background-color: white;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-account_content__column,
+.edit-account_content__column {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.add-account_content__content-items,
+.edit-account_content__content-items {
+  width: 48%;
+  margin-right: 2%;
+}
+
+.add-account_content__content-items:last-child,
+.edit-account_content__content-items:last-child {
+  margin-right: 0;
+}
+
+.add-account_content__content-items label,
+.edit-account_content__content-items label {
+  font-weight: bold;
+}
+
+.add-account_content__content-items input,
+.edit-account_content__content-items input,
+.edit-account_content__content-items select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.add-account_buttons,
+.edit-account_buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Khoảng cách giữa các nút */
+  padding: 10px 0; /* Padding cho các nút */
+  flex-wrap: wrap; /* Cho phép các nút xuống dòng khi không đủ chỗ */
+}
+
+.add-account_buttons button,
+.edit-account_buttons button {
+  padding: 8px 16px; /* Padding cho các nút */
+  font-size: 14px; /* Kích thước chữ phù hợp */
+  border: none; /* Loại bỏ border mặc định */
+  border-radius: 4px; /* Bo góc cho các nút */
+  cursor: pointer; /* Thêm con trỏ chuột khi hover */
+}
+
+.add-account_buttons button:hover,
+.edit-account_buttons button:hover {
+  background-color: #04ff00; /* Màu nền khi hover */
+}
+
+/* button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:last-child {
+  background-color: #f44336;
+}
+
+button:last-child:hover {
+  background-color: #d32f2f;
+} */
+
+.container-account_content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+}
+
+.right-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.right-section th, 
+.right-section td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.right-section h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.search-acc-container {
+  display: flex;
+  justify-content: flex-start; /* Căn trái, nếu cần chỉnh giữa thì đổi thành 'center' */
+  align-items: center;
+  margin-bottom: 20px; /* Tạo khoảng cách giữa ô tìm kiếm và bảng */
+}
+
+.search-acc-input {
+  padding: 8px;
+  font-size: 16px;
+  width: 250px; /* Độ rộng của ô tìm kiếm */
+  margin-right: 10px; /* Khoảng cách với nút tìm kiếm */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.search-acc-button {
+  padding: 8px 12px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff; /* Màu xanh dương */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-acc-button:hover {
+  background-color: #0056b3; /* Đậm hơn khi hover */
+}
+
+.status-filter {
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.reactivate-acc {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reactivate-acc:hover {
+  background-color: #45a049;
+}
+
+.account_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Căn giữa theo chiều ngang */
+  justify-content: center; /* Căn giữa theo chiều dọc */
+}
+
+.account_title {
+  margin-bottom: 20px; /* Thêm khoảng cách giữa tiêu đề và nội dung */
+  font-size: 24px;
+  font-weight: bold;
+}

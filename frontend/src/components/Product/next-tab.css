@@ -1,0 +1,162 @@
+.modal-body {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.form-group {
+  display: flex;
+  gap: 2px;
+}
+
+.form-group label {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group select,
+.form-group input {
+  margin-right: 5px;
+  width: 135px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.form-group select option {
+  padding: 10px;
+}
+
+.action-buttons-sp {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  gap: 15px;
+}
+
+.action-buttons-sp .btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.action-buttons-sp .btn-add {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.action-buttons-sp .btn-update {
+  background-color: #0e9aeb;
+  color: #fff;
+}
+
+.action-buttons-sp .btn-reset {
+  background-color: #d43d3d;
+  color: #fff;
+}
+
+.table-sp {
+  margin-top: 10px;
+  overflow-x: auto;
+}
+
+.table-sp .table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+}
+
+.table-sp .table th,
+.table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.table-sp .table th {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.table-sp .table td {
+  background-color: #fff;
+}
+
+.table-sp .table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.table-sp .table .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.table-sp .table .btn-edit {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+.table-sp .table .btn-delete {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.table-sp .table .btn-add {
+  background-color: #28a745;
+  color: #fff;
+}
+.aciton-add-products {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.add-prodduct-sp {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.add-prodduct-sp:hover {
+  background-color: #1e7d34;
+  transform: translateY(-3px);
+}
+.comback-sp {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.comback-sp:hover {
+  background-color: #ab2633;
+  transform: translateY(-3px);
+}

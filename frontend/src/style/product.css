@@ -1,0 +1,146 @@
+.product-list {
+  width: 95%; /* Tăng chiều rộng của bảng */
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.product-list h2 {
+  text-align: center;
+  margin-bottom: 5px;
+  color: white;
+  background-color: #3498db;
+  padding: 10px;
+}
+
+.product-list table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto; /* Cho phép bảng tự động điều chỉnh chiều rộng cột */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ cho bảng */
+}
+.table-products {
+  max-height: 500px;
+
+  overflow-y: auto;
+}
+.rows {
+  position: sticky;
+  top: 0;
+}
+
+.product-list th,
+.product-list td {
+  border: 1px solid #ddd;
+  padding: 12px; /* Tăng khoảng cách giữa các cột để dễ nhìn hơn */
+  text-align: left;
+  white-space: nowrap; /* Đảm bảo chữ không bị xuống dòng */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Thêm dấu "..." nếu chữ quá dài */
+  font-size: 13px;
+}
+
+.product-list th {
+  background-color: #f4f4f4;
+  color: #333;
+  font-weight: bold;
+}
+
+.product-list tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.product-list tr:hover {
+  background-color: #f1f1f1; /* Thêm hiệu ứng hover cho hàng */
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.product-actions {
+  display: flex;
+  gap: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.product-actions button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Thêm hiệu ứng mượt mà */
+}
+
+.product-actions button svg {
+  margin-right: 8px;
+}
+.action-button {
+  display: flex;
+  gap: 10px;
+  font-size: 16px;
+}
+.action-button.action-button button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+.action-button button:hover {
+  transform: scale(1.05); /* Hiệu ứng phóng to khi hover */
+}
+.btn-add-product {
+  background-color: #28a745;
+}
+
+.btn-detail-product {
+  background-color: rgb(180, 160, 160);
+}
+
+.btn-add-product:hover {
+  background-color: #2d6639; /* Tối hơn khi hover */
+  transform: translateY(-3px); /* Tăng hiệu ứng nâng khi hover */
+}
+
+.list-button {
+  gap: 5px;
+  display: flex;
+}
+
+.search-filter {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.search-filter input,
+.search-filter select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: border-color 0.3s ease; /* Thêm hiệu ứng mượt mà cho input/select */
+}
+
+.search-filter input:focus,
+.search-filter select:focus {
+  border-color: #3498db; /* Thay đổi màu border khi focus */
+  outline: none; /* Bỏ outline mặc định */
+}
+
+.search-filter input {
+  width: 200px; /* Giới hạn chiều rộng của input tìm kiếm */
+}
+
+.search-filter select {
+  width: 150px; /* Giới hạn chiều rộng của select */
+}

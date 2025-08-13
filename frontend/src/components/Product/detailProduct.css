@@ -1,0 +1,235 @@
+/* Nền mờ */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease-in-out;
+}
+.action-button {
+  display: flex;
+  gap: 5px;
+}
+.modal-content h3 {
+  font-size: 25px;
+  text-align: center;
+}
+
+/* Nội dung modal */
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+.h3 {
+  font-size: 20px;
+}
+/* Hiệu ứng fade-in cho modal */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Chi tiết sản phẩm */
+.detail-content {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Đảm bảo các phần tử không bị vỡ layout khi kích thước nhỏ */
+}
+
+.detail-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-detail {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.img-detail img{
+  position: absolute;
+  height:100%;
+  width:100%;
+  object-fit: cover;
+}
+.color-options {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.color-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.color-button.active {
+  border: 2px solid black; 
+}
+
+.detail-right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.detail-right p {
+  font-size: 16px;
+  color: #333;
+  margin: 7px 0;
+  line-height: 1.5;
+}
+
+.detail-right p strong {
+  color: #131111;
+  font-weight: bold;
+}
+
+/* Nút đóng */
+.btn-close {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 16px;
+  transition: background-color 0.2s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-close:hover {
+  background-color: #c82333;
+  transform: scale(1.1); /* Hiệu ứng phóng to */
+}
+
+/* Nút Tiếp Tục */
+.next-tab {
+  margin-top: 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.next-tab:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* Bảng thông tin sản phẩm */
+.product-table {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.product-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-table th,
+.product-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.product-table th {
+  background-color: #f2f2f2;
+}
+
+.product-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.product-table tr:hover {
+  background-color: #f1f1f1; /* Hiệu ứng hover cho bảng */
+}
+
+/* Nút Quay trở lại */
+.comback {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.comback:hover {
+  background-color: #1976d2;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .detail-content {
+    flex-direction: column;
+  }
+
+  .img-detail {
+    height: 200px;
+    max-width: 100%;
+  }
+
+  .detail-right p {
+    font-size: 14px;
+  }
+
+  .next-tab,
+  .comback {
+    width: 100%; /* Nút chiếm full chiều rộng trong chế độ mobile */
+  }
+}
